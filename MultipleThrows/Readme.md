@@ -74,4 +74,33 @@ Save estimates produces four .csv files in the working directory:
 Please note that in this version of the sampler we focus on sigma and mu estimates, as well as the latent partition induced. Thus, the predictive density estimation methods are deprecated.
 However, they can represent a possible addition to the sampler implementation.
 
+
+# Analysis example
+In the following are shown some plots, produced during post processing.
+
+Example of guessed mixture components for athlete 1. Dashed blue lines represent 95% span of a gaussian.
+
+![plot] (Img/athlete1.png)
+
+
+Posterior similarity matrix and relative clustermap: spotting of the true five groups is already visible
+
+![plot] (Img/psm.png)
+
+![plot] (Img/heatmap.png)
+
+
+All points, divided per seasons, coloured according to cluster belonging. Cluster mean levels.
+
+![plot] (Img/allpointsclust.png)
+
+
+Latent partition showed in each season: true underlying structure of generated data seems to be guessed properly.
+
+![plot] (Img/hists.png)
+
+
+Comparison of athlete 1, 3 and 5 
+
+![plot] (Img/Athlete1vs3vs5.png)
  
