@@ -8,10 +8,10 @@ hrbrthemes::import_roboto_condensed()
 col_pal=c("steelblue3", "darksalmon","lightgreen")
 
 # Set wd
-setwd("C:/Users/aughi/Desktop/Hierarchical Bayesian Nonparametric models to smooth functional data/NIG_ResultsAnalysis")
+setwd("YOUR PATH/NIG/NIG_ResultsAnalysis")
 
 # Import Data
-Data<-read.csv("C:/Users/aughi/Desktop/Hierarchical Bayesian Nonparametric models to smooth functional data/NIG_DataGeneration/Data.csv",header=F)
+Data<-read.csv("YOUR PATH/NIG/NIG_DataGeneration/Data.csv",header=F)
 Data<-as.numeric(Data)
 data<- data.frame(
   type = c( rep("1ST REST", 100), rep("2ND REST", 100)),
