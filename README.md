@@ -44,7 +44,8 @@ Please note that:
 
 
 # Requirements
-No particular requirements is needed: all R packages used are common ones; the only particular one (relative to Sara Wade code) is downloadable from github as shown in the scripts where it is used.
+No particular requirements is needed: all R packages used are common ones; the only particular one (relative to Wade's code) is downloadable from github as shown in the scripts where it is used.
+
 Code in Cpp is raw and only need a standard compiler.
 
 # Interfacing 
