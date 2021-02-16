@@ -52,7 +52,7 @@ No particular requirements is needed: all R packages used are common ones; the o
 Code in Cpp is raw and only need a standard compiler.
 
 # Interfacing 
-A specific interface between samplers and data generators/results analysis scripts is not provided, thus as a general rule the procedure to follow is:
+A specific interface between samplers (in Cpp) and data generators/results analysis scripts (R) is not provided, thus as a general rule the procedure to follow is:
 1. Generate data / arrange data in order to be fed to the sampler and save the created structures.
 2. Run the samplers passing the data structures created at point 1. Sampler saves automatically all the results in his working directory.
 3. Load the sampler results in R to perform analysis.
