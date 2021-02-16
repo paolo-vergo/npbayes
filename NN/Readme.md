@@ -30,7 +30,8 @@ Sampler parameters MUST be tweaked at this point, if needed. Here a list of the 
 * set_gamma(double gam) : second level HDP parameter 
 * void set_sigma0(double s0) : fixed and known variance for the mixture components
 * set_clust(const vector<int>& clust_): initial number of clusters per season. 
-Then, initialize function must be called.
+  
+\\Then, initialize function must be called.
 Initialize_grid permits to specify the fining of the grid on which the predictive densities will be evaluated for each season.
 Sampling start the algorithm, Print shows the hidden state of the sampler.
 Save estimates produces four .csv files in the working directory:
