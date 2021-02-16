@@ -1,20 +1,24 @@
 ######################### RESULTS ANALYSIS ############################################
 
-setwd("C:/Users/aughi/Desktop/Hierarchical Bayesian Nonparametric models to smooth functional data/Dataset/Second Run")
+setwd("YOUR PATH/Shotput/Post processing")
 
 #import MCMC
 MU_MCMC<-read.csv(file="Mu_Estimates.csv", header=F)
 SIGMA_MCMC<-read.csv(file="Sigma_Estimates.csv", header=F)
 SIGMA_MCMC<-as.numeric(SIGMA_MCMC)
+clust_MCMC<-read.csv(file="Clust_Estimates.csv", header=F)
 
 
 ## Import saved structures
-setwd("C:/Users/aughi/Desktop/Hierarchical Bayesian Nonparametric models to smooth functional data/Dataset")
+
+setwd("YOUR PATH/Shotput/Pre processing/Data")
 load("Activity_matrix.RData")
 load("Times.RData")
 load("Complete_Data.RData")
 
+
 ##Structures for traceplots
+
 NAlist<-vector("list",1086)
 for(i in 1:1086)
   NAlist[[i]]<-NA
@@ -205,9 +209,6 @@ for (i in c(1,100,500)){
 ## Clustering between seasons
 #devtools::install_github("sarawade/mcclust.ext")
 
-setwd("C:/Users/aughi/Desktop/Hierarchical Bayesian Nonparametric models to smooth functional data/Dataset/Third Run")
-
-clust_MCMC<-read.csv(file="Clust_Estimates.csv", header=F)
 clust_MCMC<-clust_MCMC+1
 library(mcclust.ext)
 
@@ -228,7 +229,7 @@ plot(post_clust$cl, col=post_clust$cl,xlab='',ylab='', pch=4, cex=0.8, main='Clu
 legend('bottomright', fill = palette(),cex=0.75,legend = c("Cluster 1","Cluster 2","Cluster 3","Cluster 4","Cluster 5","Cluster 6","Cluster 7","Cluster 8","Cluster 9","Cluster 10","Cluster 11"))
 
 cl<-post_clust$cl
-x11()
+
 ## Cluster means
 ClMeans<-rep(NA,length(levels(as.factor(cl))))
 for(i in 1:length(ClMeans)){
@@ -245,7 +246,7 @@ for(i in 1:length(ClMeans)){
 
 ClMeans<-round(ClMeans,digits=2)
 
-## post_clust_1<-minbinder(psm) best to use VI
+## post_clust_1<-minbinder(psm); best to use VI
 
 #  Visualization
 
@@ -293,12 +294,12 @@ text(365*19/2,25,labels = "Season 10", col = 'darkgrey',cex = 0.63)
 library(ggplot2)
 library(ggpubr)
 
+#Note: need dataset to run this section
+
 setwd("C:/Users/aughi/Desktop/Hierarchical Bayesian Nonparametric models to smooth functional data/Dataset")
 data = read.table("dataset_comp_with_n_seas.txt", sep = " ", header = T)
 data$n_seas=data$n_seas+1
 data<-data[which(data$n_seas<=10),]
-
-setwd("C:/Users/aughi/Desktop/Hierarchical Bayesian Nonparametric models to smooth functional data/Dataset/second Run")
 
 ## select season and plot
 j=1
@@ -434,29 +435,5 @@ for( j in 1:10){
  
 }
 
-#LPML
-library(mvtnorm)
-Data <- read.csv(file="C:/Users/aughi/Desktop/Hierarchical Bayesian Nonparametric models to smooth functional data/Dataset/Data.csv",header = FALSE)
-Data<-as.numeric(Data)
-cpo<-NULL
-z<-0
-count<-0
-for (j in 1:10){                                  #season
-  for (i in 1:1086 ){                            #athlete
-    if (!is.na(Complete_Data[[j]][[i]])){
-        dd<-NULL
-        z<-z+1
-        dato<-Complete_Data[[j]][[i]]
-        for(k in 1:990){            #iteration
-        mu<-rep(MU_MCMC[k,z],length(dato))    
-        sig<-diag(length(dato))*SIGMA_MCMC[k]
-        dd<-c(dd,1/dmvnorm(dato,mu,sig))
-        count<-count+length(which(dd>1e1))
-        dd<-dd[which(dd<1e1)]
-        }
-        cpo<-c(cpo,1/mean(dd))
-    }
-  }
-}
-LPML<-sum(log(cpo[!is.na(cpo)]))-count*1e-3
+
 
