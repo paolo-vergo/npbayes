@@ -1,5 +1,6 @@
 # Hierarchical-Nonparametric-Bayesian-Models-to-smooth-functional-data
 Project carried out during Bayesian Statistics course of PoliMi, 2021.
+
 This repository contains a CPP implementend version of Gibbs Sampler for the following Hierarchical Dirichlet Mixture Model:
 
 
