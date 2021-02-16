@@ -1,6 +1,6 @@
 library(distr)
 
-setwd("C:/Users/aughi/Desktop/Hierarchical Bayesian Nonparametric models to smooth functional data/NIG_DataGeneration")
+setwd("YOURPATH/NIG/NIG_DataGeneration")
 
 ## simulated data:case 1
 # X[1,1]...X[1,150]~0.2N(-3,0.1)+0.8N(0,0.5)
