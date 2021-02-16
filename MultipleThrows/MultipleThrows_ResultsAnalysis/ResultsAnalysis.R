@@ -1,6 +1,6 @@
 ######################### RESULTS ANALYSIS ############################################
 
-setwd("C:/Users/aughi/Desktop/Hierarchical Bayesian Nonparametric models to smooth functional data/SAVED")
+setwd("YOUR PATH/MultipleThrows/MultipleThrows_ResultsAnalysis")
 
 #import MCMC
 MU_MCMC<-read.csv(file="Mu_Estimates.csv", header=F)
