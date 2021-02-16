@@ -37,10 +37,11 @@ for( i in 1:dim(Activity_matrix)[2]){
 #Traceplots
 
 #Sigma
+
 plot(SIGMA_MCMC, type = 'l', col='darkgrey', main = 'Sigma Traceplot', sub = "alpha = 0.5    gamma = 0.7", xlab = '', ylab = 'Sigma')
-abline(v=10,col='red')
-text(5,3.0, labels=" Burnin: 10", col = 'red')
+
 SIGMA_MCMC<-SIGMA_MCMC[-seq(1,200,by=1)]
+
 plot(SIGMA_MCMC, type = 'l', col='darkgrey', main = 'Sigma Traceplot - Burnin: 10',sub = "alpha = 0.5   gamma = 0.7", xlab = '', ylab = 'Sigma')
 
 ##MU of chosen Athlete
@@ -60,8 +61,11 @@ for(i in 1:10){
 }
 
 MU_MCMC<-MU_MCMC[-seq(1,200,by=1),]
+
 # compute estimates and store them
+
 MU<-colMeans(MU_MCMC)
+
 SIGMA<-mean(SIGMA_MCMC)
 
 MU_complete<- matrix(data = NA, nrow = dim(Activity_matrix)[1], ncol = dim(Activity_matrix)[2])
@@ -217,7 +221,7 @@ n <- dim(clust_MCMC)[1]
 
 psm<-comp.psm(as.matrix(clust_MCMC))
 
-#image(psm)
+#image(psm)                     too expensive with real data
 
 #heatmap(psm)
 
@@ -296,8 +300,7 @@ library(ggpubr)
 
 #Note: need dataset to run this section
 
-setwd("C:/Users/aughi/Desktop/Hierarchical Bayesian Nonparametric models to smooth functional data/Dataset")
-data = read.table("dataset_comp_with_n_seas.txt", sep = " ", header = T)
+data = read.table("NOT AVAILABLE", sep = " ", header = T)
 data$n_seas=data$n_seas+1
 data<-data[which(data$n_seas<=10),]
 
@@ -422,7 +425,7 @@ plot(n_clust, type='l',main='Number of unique values across iterations',xlab='',
 
 # traceplot of unique dish values between different seasons
 
-Dims <- read.csv(file="C:/Users/aughi/Desktop/Hierarchical Bayesian Nonparametric models to smooth functional data/Dataset/Dims.csv",header = FALSE)
+Dims <- read.csv(file="Your path/Shotput/Pre processing/Data/Dims.csv",header = FALSE)
 Dims<-as.numeric(Dims)
 x11()
 par(mfrow=c(5,2))
