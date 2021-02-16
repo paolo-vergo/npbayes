@@ -1,6 +1,6 @@
 ######################### RESULTS ANALYSIS ############################################
 
-setwd("C:/Users/aughi/Desktop/Hierarchical Bayesian Nonparametric models to smooth functional data/SAVED")
+setwd("YOUR PATH/MultipleThrows/MultipleThrows_resulAnalysis")
 
 #import MCMC
 MU_MCMC<-read.csv(file="Mu_Estimates.csv", header=F)
@@ -27,6 +27,7 @@ for( i in 1:dim(Activity_matrix)[2]){
     }
   }
 }
+
 
 # Approximated T intervals
 alpha<-0.05
