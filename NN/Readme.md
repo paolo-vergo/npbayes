@@ -46,6 +46,8 @@ Save estimates produces four .csv files in the working directory:
   3. grid: values of the grid created
   4. predictive: each row contains the corresponing season estimates for the predictive in each point of the grid
  
+ An important note: MCMC estimates of mu and clustering are provided for completeness, but we do not focus particularly on them at this stage.
+ 
  # Example : effect of alpha
  Example of the first HDP parameter effect: increasing of the borrowing of information.
  
