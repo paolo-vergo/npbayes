@@ -3,20 +3,38 @@ As already pointed out the Shotput Dataset is not available publicly in this rep
 
 # An idea of what it is like
 
+
+
 ![plot](Img/one.png)
+
+
 
 ![plot](Img/two.png)
 
+
+
 ![plot](Img/three.png)
+
+
 
 ![plot](Img/four.png)
 
+
+
 ![plot](Img/five.png)
+
+
 
 ![plot](Img/six.png)
 
+
+
 ![plot](Img/seven.png)
 
+
+
 ![plot](Img/eight.png)
+
+
 
 ![plot](Img/nine.png)
