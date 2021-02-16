@@ -80,27 +80,27 @@ In the following are shown some plots, produced during post processing.
 
 Example of guessed mixture components for athlete 1. Dashed blue lines represent 95% span of a gaussian.
 
-![plot] (Img/athlete1.png)
+![plot](Img/athlete1.png)
 
 
 Posterior similarity matrix and relative clustermap: spotting of the true five groups is already visible
 
-![plot] (Img/psm.png)
+![plot](Img/psm.png)
 
-![plot] (Img/heatmap.png)
+![plot](Img/heatmap.png)
 
 
 All points, divided per seasons, coloured according to cluster belonging. Cluster mean levels.
 
-![plot] (Img/allpointsclust.png)
+![plot](Img/allpointsclust.png)
 
 
 Latent partition showed in each season: true underlying structure of generated data seems to be guessed properly.
 
-![plot] (Img/hists.png)
+![plot](Img/hists.png)
 
 
 Comparison of athlete 1, 3 and 5 
 
-![plot] (Img/Athlete1vs3vs5.png)
+![plot](Img/Athlete1vs3vs5.png)
  
