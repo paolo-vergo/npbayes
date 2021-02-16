@@ -47,5 +47,18 @@ Save estimates produces four .csv files in the working directory:
   4. predictive: each row contains the corresponing season estimates for the predictive in each point of the grid
  
  # Example : effect of alpha
+ Example of the first HDP parameter effect: increasing of the borrowing of information.
+ 
+ ![plot]((Img/first.png)
+ 
+ Small values of alpha: no borrowing.
+ 
+ ![plot]((Img/second.png)
+ 
+ Alpha increases: tails in correspondence of no data arise in season 2 and 3, due to the sharing of information of the other seasons!
+ 
+ ![plot]((Img/third.png)
+ 
+ Very high values of alpha produces peaks even if no data are present in their correspoondence: keep attention!
  
  
