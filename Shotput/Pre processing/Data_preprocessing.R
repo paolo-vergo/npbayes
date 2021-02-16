@@ -1,8 +1,6 @@
 ################### Real data preprocessing ###########################################
 
-setwd("C:/Users/aughi/Desktop/Hierarchical Bayesian Nonparametric models to smooth functional data/Dataset")
-
-data = read.table("dataset_comp_with_n_seas.txt", sep = " ", header = T)
+data = read.table( "NOT AVAILABLE")
 data$n_seas=data$n_seas+1
 dim(data)                                #55390 9
 colnames(data)      #"id" "tij" "result" "gender" "age"  "dop" "enveironment" "season"       "n_seas" 
