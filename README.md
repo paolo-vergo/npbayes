@@ -3,21 +3,7 @@ Project carried out during Bayesian Statistics course of PoliMi, 2021.
 
 This repository contains a CPP implementend version of Gibbs Sampler for the following Hierarchical Dirichlet Mixture Model:
 
-
-
-
-
-
-IMAGE
-
-
-
-
-
-
-
-
-
+![plot](Img/formulareadme.PNG)
 
 It was designed in order to carry out a task of functional smoothing for grouped data, in particular to estimate the step functional component of sport performances 
 data contained in the Shotput Dataset. Please refer to the Project Report for details about context and further research.
