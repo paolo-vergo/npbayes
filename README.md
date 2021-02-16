@@ -17,17 +17,17 @@ Repository contais also implementations of Gibbs Samplers designed for slightly 
 # Repository organization
 An index to move through folders:
 
-*Multiple Throws: presented version
+* Multiple Throws: presented version
    * Data Generation: simulated data to test the sampler
    * Results Analysis: script to analyze results produced by the sampler
    * Sampler: CPP implementation 
    * Readme : model specification and notes
-*NIG: Normal-Inverse Gamma version
+* NIG: Normal-Inverse Gamma version
    * Data Generation: simulated data to test the sampler
    * Results Analysis: script to analyze results produced by the sampler
    * Sampler: CPP implementation
    * Readme : model specification and notes
-*NN: Normal-Normal version
+* NN: Normal-Normal version
    * Data Generation: simulated data to test the sampler
    * Results Analysis: script to analyze results produced by the sampler
    * Sampler: CPP implementation
