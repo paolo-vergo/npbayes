@@ -1,6 +1,5 @@
 # Model implemented
 
-
 ![plot](Img/NN1.PNG)
 
 # Aim
