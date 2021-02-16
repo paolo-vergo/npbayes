@@ -1,32 +1,45 @@
 ######################### DENSITY ESTIMATIOn ############################
 
-### LOAD DATA
-setwd("C:/Users/aughi/Desktop/Hierarchical Bayesian Nonparametric models to smooth functional data/NN_DataGeneration")
+### setwd and load libraries
+setwd("Your_path/NN/NN_DataGeneration")
+
+library(distr)
+library(ggplot2)
+library(dplyr)
+library(hrbrthemes)
+library(wesanderson)
+
+col_pal=c("lightgreen", "darksalmon","steelblue3")
+
 
 par(mfrow=c(1,3))
+
+# Import Data
+
 Data<-read.csv("Data2.csv",header=F)
 Data<-as.numeric(Data)
-hist(Data[1:150], breaks=20, col="grey",prob=T, main="First season",xlim=c(-6,6))
-hist(Data[151:250], breaks=20, col="grey",prob=T, main="Second season",xlim=c(-6,6))
-hist(Data[251:325], breaks=20, col="grey",prob=T, main="Third season",xlim=c(-6,6))
+data<- data.frame(
+  type = c( rep("1ST REST", 150), rep("2ND REST", 100), rep("3RD REST",75) ),
+  value = c( Data[1:150], Data[151:250],Data[251:325])
+)
 
-setwd("C:/Users/aughi/Desktop/Hierarchical Bayesian Nonparametric models to smooth functional data/NN_ResultsAnalysis")
 
-## Density Estimation 
+# Import Result: Predictive
+
+setwd("Your_path/NN/NN_ResultsAnalysis")
 res<-read.csv("Predictive.csv",header=F)
-
 grid<-read.csv("Grid.csv",header=F)
 grid<-as.numeric(grid)
-
-layout(1)
-plot(grid, res[1,],type='l')
-plot(grid, res[2,],type='l')
-plot(grid, res[3,],type='l')
+fit<-data.frame("GRID"=grid,"FIT1"=unlist(res[1,]),"FIT2"=unlist(res[2,]),"FIT3"=unlist(res[3,]))
 
 
-hist(Data[1:150], breaks=30, col="grey",prob=T, main="First season",xlim=c(-6,6),ylim=c(0,0.9))
-lines(grid, res[1,],col='red')
-hist(Data[151:250], breaks=30, col="grey",prob=T, main="Second season",xlim=c(-6,6),ylim=c(0,0.9))
-lines(grid, res[2,],col='red')
-hist(Data[251:325], breaks=30, col="grey",prob=T, main="Third season",xlim=c(-6,6),ylim=c(0,0.9))
-lines(grid, res[3,],col='red')
+
+p <- data %>%
+  ggplot( ) +
+  geom_histogram( color="#e9ecef", alpha=0.6, position = 'identity',binwidth = 0.3,aes(x=value, fill=type,y = ..density..)) +
+  scale_fill_manual(values=col_pal) +geom_line(data = fit, aes(x=GRID,y=FIT1), color= col_pal[1], size=1.1)+labs(fill="")+geom_line(data = fit, aes(x = GRID, y = FIT2), col = col_pal[2],size=1.1)+geom_line(data = fit, aes(x = GRID, y = FIT3), col =col_pal[3],size=1.1)+ ggtitle("alpha = 1, gamma=1") +
+  theme(plot.title = element_text(hjust = 0.5))
+
+p
+
+
