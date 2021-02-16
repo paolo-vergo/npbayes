@@ -7,8 +7,8 @@ using std::vector;
 int main() {
 
     //Import Rdata
-    vector<double> Data=read_data_csv(R"(C:\Users\aughi\Desktop\Hierarchical Bayesian Nonparametric models to smooth functional data\NN_DataGeneration\Data2.csv)");
-    vector<int>    Dims=read_dims_csv(R"(C:\Users\aughi\Desktop\Hierarchical Bayesian Nonparametric models to smooth functional data\NN_DataGeneration\Dims2.csv)");
+    vector<double> Data=read_data_csv(R"(YOUR PATH\NN\NN_DataGeneration\Data2.csv)");
+    vector<int>    Dims=read_dims_csv(R"(YOURPATH\NN\NN_DataGeneration\Dims2.csv)");
 
     //Instantiate sampler object
     Sampler S(Data,Dims);
