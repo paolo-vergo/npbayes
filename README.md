@@ -60,8 +60,11 @@ A specific interface between samplers (in Cpp) and data generators/results analy
 
 # Authors
 Mirko Giovio          *Politecnico di Milano - MSc in Statistical Learning*
+
 Riccardo Scaramuzza   *Politecnico di Milano - MSc in Statistical Learning*
+
 Daniele Venturini     *Politecnico di Milano - MSc in Statistical Learning*
+
 Paolo Vergottini      *Politecnico di Milano - MSc in Statistical Learning*
 
 # Acknowledgments
