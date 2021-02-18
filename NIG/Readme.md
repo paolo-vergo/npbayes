@@ -3,7 +3,7 @@
 ![plot](Img/formula.PNG)
 
 # Aim
-This sampler was developed for to evaluate the chance of considering a bivariate mixture component (couple Mu - Sigma), accordingly to the model provided. Moreover, once again the ability of borrowing of information is tested.
+This sampler was developed to evaluate the chance of considering a bivariate mixture component (couple Mu - Sigma), accordingly to the model provided. Moreover, once again the ability of borrowing of information is tested.
 
 For further details, see Section 3.3 of the Project Report.
 
