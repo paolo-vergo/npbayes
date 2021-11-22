@@ -1,6 +1,6 @@
 ############################# DATA GENERATION ################################################
 
-setwd("YOUR PATH/MultipleThrows/MultipleThrows_DataGeneration")
+setwd("C:/Users/aughi/Desktop/Hierarchical Bayesian Nonparametric models to smooth functional data/MultipleThrowsDataGeneration")
 
 
 # Hypothesis:
