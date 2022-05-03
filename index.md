@@ -2,7 +2,7 @@ This repository contains a CPP implementend version of Gibbs Sampler for the fol
 
 
 <p align="center">
-  <img src="Img/formulareadme.PNG">
+  <img src="formulareadme.PNG">
 </p>
 
 
@@ -10,7 +10,7 @@ It was designed in order to carry out a task of functional smoothing for grouped
 data contained in the Shotput Dataset. Please refer to the Project Report for details about context and further research.
 
 <p align="center">
-  <img src="Img/final98_500_800.png">
+  <img src="final98_500_800.png">
 </p>
 
 
