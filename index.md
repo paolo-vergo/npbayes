@@ -1,15 +1,17 @@
 This repository contains a CPP implementend version of Gibbs Sampler for the following Hierarchical Dirichlet Mixture Model:
 
 
-
-![plot](formulareadme.PNG)
-
+<p align="center">
+  <img src="Img/formulareadme.PNG">
+</p>
 
 
 It was designed in order to carry out a task of functional smoothing for grouped data, in particular to estimate the step functional component of sport performances 
 data contained in the Shotput Dataset. Please refer to the Project Report for details about context and further research.
 
-![plot](final98_500_800.png)
+<p align="center">
+  <img src="Img/final98_500_800.png">
+</p>
 
 
 Repository contais also implementations of Gibbs Samplers designed for slightly different models. Refer to specific Readme files for their formulations and purposes.
