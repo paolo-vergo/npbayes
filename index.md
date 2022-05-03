@@ -5,14 +5,14 @@ This repository contains a CPP implementend version of Gibbs Sampler for the fol
 
 
 
-![plot](npbayes/Img/formulareadme.PNG)
+![plot](formulareadme.PNG)
 
 
 
 It was designed in order to carry out a task of functional smoothing for grouped data, in particular to estimate the step functional component of sport performances 
 data contained in the Shotput Dataset. Please refer to the Project Report for details about context and further research.
 
-![plot](npbayes/Img/final98_500_800.png)
+![plot](final98_500_800.png)
 
 
 Repository contais also implementations of Gibbs Samplers designed for slightly different models. Refer to specific Readme files for their formulations and purposes.
