@@ -3,9 +3,9 @@ Project carried out during Bayesian Statistics course of PoliMi, 2021. Special t
 
 This repository contains a CPP implementend version of Gibbs Sampler for the following Hierarchical Dirichlet Mixture Model:
 
-
-
+<p align="center">
 ![plot](Img/formulareadme.PNG)
+</p>
 
 
 
