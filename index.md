@@ -56,3 +56,16 @@ A specific interface between samplers (in Cpp) and data generators/results analy
 1. Generate data / arrange data in order to be fed to the sampler and save the created structures.
 2. Run the samplers passing the data structures created at point 1. Sampler saves automatically all the results in his working directory.
 3. Load the sampler results in R to perform analysis.
+
+# Authors
+Mirko Giovio          *Politecnico di Milano - MSc in Statistical Learning*
+
+Riccardo Scaramuzza   *Politecnico di Milano - MSc in Statistical Learning*
+
+Daniele Venturini     *Politecnico di Milano - MSc in Statistical Learning*
+
+Paolo Vergottini      *Politecnico di Milano - MSc in Statistical Learning*
+
+# Acknowledgments
+Special thanks to Prof. Raffaele Argiento, under whose guidance all the material was developed.
+
