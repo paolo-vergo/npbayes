@@ -1,4 +1,4 @@
-# Hierarchical Nonparametric Bayesian Models for Smooth Functional Data
+# Hierarchical Nonparametric Bayesian Models to Smooth Functional Data
 <br>
 <p align="center">
   <img src="Img/final98_500_800.png">
