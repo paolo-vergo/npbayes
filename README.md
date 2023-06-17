@@ -72,6 +72,6 @@ We have not provided a specific interface between the CPP samplers and the R dat
 
 ## Acknowledgments
 
-We extend our heartfelt thanks to **Prof. Raffaele Argiento** for his invaluable guidance and support throughout the development of this project. His expertise and mentorship have been instrumental in shaping this work and enabling its success.
+We extend our heartfelt thanks to **Prof. Raffaele Argiento** (*Cattolica University of Milan*) for his invaluable guidance and support throughout the development of this project. His expertise and mentorship have been instrumental in shaping this work and enabling its success.
 
 This project demonstrates the power and potentiality of hierarchical nonparametric Bayesian models in smoothing functional data. By combining advanced statistical techniques with a flexible Gibbs Sampler implementation, we open new doors for extracting meaningful insights from grouped data. We hope that this repository inspires further research and exploration in the field of functional data analysis, and we invite you to delve into the code and unleash the full potential of these models.
