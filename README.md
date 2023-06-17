@@ -1,24 +1,25 @@
-# Hierarchical Nonparametric Bayesian Models to smooth functional data
-Project carried out during Bayesian Statistics course of PoliMi, 2021. Special thanks to Prof. Raffaele Argiento.
-
-This repository contains a CPP implementend version of Gibbs Sampler for the following Hierarchical Dirichlet Mixture Model:
-
-<p align="center">
-  <img src="Img/formulareadme.PNG">
-</p>
-
-
-It was designed in order to carry out a task of functional smoothing for grouped data, in particular to estimate the step functional component of sport performances 
-data contained in the Shotput Dataset. Please refer to the Project Report for details about context and further research.
-
+# Hierarchical Nonparametric Bayesian Models for Smooth Functional Data
+<br>
 <p align="center">
   <img src="Img/final98_500_800.png">
 </p>
 
+<br> <br>
 
-Repository contais also implementations of Gibbs Samplers designed for slightly different models. Refer to specific Readme files for their formulations and purposes.
+Welcome to the Hierarchical Nonparametric Bayesian Models for Smooth Functional Data project! This repository contains an implementation of a CPP Gibbs Sampler for a Hierarchical Dirichlet Mixture Model. It was developed as part of the Bayesian Statistics course at **PoliMi** in 2021, with special thanks to **Prof. Raffaele Argiento** for his guidance.
 
-# Repository organization
+## Project Description
+
+The goal of this project is to address the task of functional smoothing for grouped data. Specifically, we focus on estimating the step functional component of sport performance data using hierarchical nonparametric Bayesian models. By leveraging the power of Bayesian statistics and nonparametric modeling, we aim to effectively smooth the data and extract meaningful insights.
+
+To accomplish this, we have implemented a CPP Gibbs Sampler for the Hierarchical Dirichlet Mixture Model. The sampler utilizes a Markov chain Monte Carlo (MCMC) algorithm to perform posterior inference and estimate the underlying step functional component. It provides a flexible and powerful approach for smoothing functional data. The model has the following statistical structure: <p align="center">
+  <img src="Img/formulareadme.PNG">
+</p>
+
+
+In addition to the Hierarchical Dirichlet Mixture Model, this repository also includes implementations of Gibbs Samplers designed for slightly different models. Each model offers a unique perspective and approach to functional smoothing. For detailed formulations and purposes of each model, please refer to the specific README files within their respective folders.
+
+## Repository organization
 An index to move through folders:
 
 * Multiple Throws: presented version
@@ -40,36 +41,37 @@ An index to move through folders:
    * Pre processing: script used to arrange data to feed them to the sampler   [R]
    * Post processing: script to analyze results produced by the sampler        [R]
    
-Please note that:
 
-1. All simulated data resulting from the Data Generation scripts are already provided in order to make each part of the code already available to be tested, as well as 
-   results of the sampling procedure.
-2. Real dataset is not provided, but post processing of the sampler results can be tested using the structures present in the folder.   
+Please note:
 
+1. All simulated data resulting from the Data Generation scripts are already provided, allowing you to test each part of the code. Additionally, the results of the sampling procedure are included, enabling you to evaluate and explore the outputs.
+2. The real Shotput dataset is not provided directly in the repository. However, you can still test the post-processing of the sampler results using the provided data structures in the Shotput folder.
 
-# Requirements
-No particular requirements is needed: all R packages used are common ones; the only particular one (relative to Wade's code) is downloadable from github as shown in the scripts where it is used.
+## Requirements
 
-Code in Cpp is raw and only needs a standard compiler.
+The implementation in this repository has minimal requirements, making it easy to set up and run. Here are the key points:
 
-# Interfacing 
-A specific interface between samplers (in Cpp) and data generators/results analysis scripts (R) is not provided, thus as a general rule the procedure to follow is:
-1. Generate data / arrange data in order to be fed to the sampler and save the created structures.
-2. Run the samplers passing the data structures created at point 1. Sampler saves automatically all the results in his working directory.
-3. Load the sampler results in R to perform analysis.
+- No special requirements are needed to run the code. All R packages used are commonly available ones, making them easily accessible.
+- The CPP code only requires a standard compiler, enabling seamless execution.
+- For one particular package (related to Wade's code), you can download it directly from GitHub as indicated in the relevant scripts where it is used.
 
+## Interfacing
 
-# Authors
-Mirko Giovio          *Politecnico di Milano - MSc in Statistical Learning*
+We have not provided a specific interface between the CPP samplers and the R data generation/results analysis scripts. As a general guideline, follow these steps:
 
-Riccardo Scaramuzza   *Politecnico di Milano - MSc in Statistical Learning*
+1. Generate or arrange the data to be fed into the sampler and save the created data structures.
+2. Run the samplers, passing the data structures created in Step 1 as inputs. The sampler will automatically save all the results in its working directory.
+3. Load the sampler results in R to perform further analysis and interpretation, using the appropriate scripts provided.
 
-Daniele Venturini     *Politecnico di Milano - MSc in Statistical Learning*
+## Authors
 
-Paolo Vergottini      *Politecnico di Milano - MSc in Statistical Learning*
+- **Mirko Giovio**: *Politecnico di Milano - MSc in Statistical Learning*
+- **Riccardo Scaramuzza**: *Politecnico di Milano - MSc in Statistical Learning*
+- **Daniele Venturini**: *Politecnico di Milano - MSc in Statistical Learning*
+- **Paolo Vergottini**: *Politecnico di Milano - MSc in Statistical Learning*
 
-# Acknowledgments
-Special thanks to Prof. Raffaele Argiento, under whose guidance all the material was developed.
+## Acknowledgments
 
+We extend our heartfelt thanks to **Prof. Raffaele Argiento** for his invaluable guidance and support throughout the development of this project. His expertise and mentorship have been instrumental in shaping this work and enabling its success.
 
-
+This project demonstrates the power and potentiality of hierarchical nonparametric Bayesian models in smoothing functional data. By combining advanced statistical techniques with a flexible Gibbs Sampler implementation, we open new doors for extracting meaningful insights from grouped data. We hope that this repository inspires further research and exploration in the field of functional data analysis, and we invite you to delve into the code and unleash the full potential of these models.
